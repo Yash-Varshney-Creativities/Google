@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    color: black;
+    overflow-x: hidden;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 110%;
+  background: #1a73e8;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 1px 3px #1a73e8;
+	-moz-box-shadow: 0px 1px 3px #1a73e8;
+	box-shadow: 0px 1px 3px #1a73e8;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.row a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li{
+    padding:15px 10px;
+}
+
+.container{
+    margin: 20px auto;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.logo-block img{
+    height: 100px;
+}
+
+form .input-block{
+    margin: 15px auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    padding:5px 8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+form .input-block input{
+    width: 100%;
+    border: 0;outline: 0;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+form input[type='submit']{
+    /* width: 100px; */
+    height: 35px;
+    border: 0;outline: 0;
+    margin: 5px 10px;
+    padding: 4px 8px;
+}
+.languages{
+    margin-top: 15px;
+}
+.btn-cnt{
+    display: flex;
+    justify-content: center;
+}
+
+i.fa.fa-search{
+    color: grey;
+}
+i.fa.fa-microphone{
+    color: orangered;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer >.row{
+    background-color: rgba(100, 99, 99, 0.126);
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.text{
+    margin-left: 10px;
+}
+
+footer>.row ul{
+    display: flex;
+    list-style: none;
+}
+footer>.row ul li{
+    padding: 4px 0px 4px 12px;
+}
+.row.bottom{
+    display: flex;
+    justify-content: space-between;
+    
+}

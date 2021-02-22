@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+	<link rel="icon" href="favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl">Gmail</a></li>
+            <li><a href="https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a></li>
+            <li><a href="chrome://apps/"><i class="fa fa-th "></i></a></li>
+            <li><a class="btn" href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/%3Fgws_rd%3Dssl&amp;ec=GAZAmgQ">Sign in</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="logo-block"><a href="https://www.google.com"><img src="./logo.png" alt=""></a></div>
+        </div>
+        <div class="row">
+            <form action="" id="main" method="POST">
+                <div class="input-block">
+                    <i class="fa fa-search"></i>
+                    <input type="text" name="serach-box" id="search-box">
+                    <a href=""><i class="fa fa-microphone" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div class="btn-cnt">
+                    <input type="submit" name="Search" id="Search" value="Google Search">
+                    <input type="submit" name="Search" id="Search" value="I'm feeling lucky">
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="languages">Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="text"><a href="#">India</a></div>
+        </div>
+        <hr style="background-color:grey">
+        <div class="row bottom">
+            <ul>
+                <li><a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a> </li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+                <li><a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a></li>
+            </ul>
+            <ul class="right">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+    document.querySelector('#main').onsubmit = function (e) {
+        e.preventDefault();
+        var search = document.querySelector('#search-box').value;
+        location.href = ('https://google.com/search?q=' + search)
+    };   
+</script>
+
+</html>
